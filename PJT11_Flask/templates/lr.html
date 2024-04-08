@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVING ROOM</title>
+    <style>
+        @font-face {
+            font-family: 'ImcreSoojin';
+            src: url('../static/font/ImcreSoojin.ttf') format('truetype');
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('../static/img/livingroom_back.png');
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            background-size: 65%;
+            background-position: center top left;
+            font-family: 'YourFontName', sans-serif;
+            display: flex;
+        }
+
+        .container {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 13%;
+            right: 16%;
+            display: flex;
+            flex-direction: column;  /* 세로 정렬 설정 */
+            
+            /* transform: translate(-50%, -50%);
+            border-radius: 10%;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;  */
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;  /* input-group 클래스에 있는 태그를 한줄로 */
+            width: 370px;
+        }
+        
+        .input-group img {
+            width: 100px;
+            height: 120px;
+            margin: 5px; /* 간격을 추가 */
+        }
+        
+        .input-group input {
+            margin: 15px; /* 간격을 추가 */
+        }
+
+        /* .icon1 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon2 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon3 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon4 {
+            width: 75px;
+            height: 50px;
+        } */
+
+        .textarea {
+            margin: 10px; /* 각 input 요소 사이의 간격 설정 */
+            font-family: 'ImcreSoojin',sans-serif;
+            font-size: 16px;
+            height: 40px;
+            width: 320px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        .click {
+            width:10%;
+            height: auto;
+            position: absolute;
+            right: 195px;
+            bottom: 150px;
+            opacity: 0.7;
+        }
+
+        .btn {
+            display:inline-block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            bottom: 18.5%;
+            right: 13.8%;
+            background-color: rgba(34, 34, 34, 0);
+            border-radius: 10px;
+            color: rgb(83, 199, 184);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: transparent;  /* 버튼의 배경색을 투명으로 설정 */
+            border: none;  /* 버튼의 테두리를 없앰 */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form action="/process1" method="post">
+
+        <!-- 소파, 거실장, 거실테이블, 사이드테이블 -->
+        <div class="container">
+            <div class="input-group">
+                <img class="icon1" src="../static/img/sofa_icon.png">
+                <input type="textbox" name="sofa" class="textarea" placeholder="원하는 스타일을 입력하세요.">
+            </div>
+            <div class="input-group">
+                <img class="icon2" src="../static/img/tvdesk_icon.png">
+                <input type="textbox" name="tv_desk" class="textarea" placeholder="원하는 스타일을 입력하세요.">
+            </div>
+            <div class="input-group">
+                <img class="icon3" src="../static/img/tb_icon.png">
+                <input type="textbox" name="table" class="textarea" placeholder="원하는 스타일을 입력하세요.">
+            </div>
+            <div class="input-group">
+                <img class="icon4" src="../static/img/sidetb_icon.png">
+                <input type="textbox" name="side_table" class="textarea" placeholder="원하는 스타일을 입력하세요.">
+            </div>
+        </div>
+        <img class="click" src="../static/img/home.png">
+
+        <button type="submit" class="btn" onclick="go_to(0)"></button>
+
+    </form>
+</body>
+</html> 
+
+
+

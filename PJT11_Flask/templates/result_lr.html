@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LIVING ROOM RESULT</title>
+    <style>
+        @font-face {
+            font-family: 'ImcreSoojin';
+            src: url('../static/font/ImcreSoojin.ttf') format('truetype');
+        }        
+        html{
+            width:100%;
+            height:100%;
+        }
+        body {
+            background-color: ivory;
+            background-image: url('../static/img/result_back1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% ;
+            background-position: center top;
+            font-family: 'YourFontName', sans-serif;
+
+        }
+        .container {
+            position: relative;
+            top: 400px;
+            display:inline-block;
+            width:400px;
+            height:100%;
+        }
+        .container .box{
+            display:inline-block;
+            width:100%;
+            box-sizing: border-box;
+        }
+
+        .center-span {
+            color: rgb(109, 86, 57);
+        }
+        #lr{
+            display:inline-block;
+
+            width:400px;
+            height:300px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{sofa[0]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{sofa[1]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{sofa[2]}}</div>
+            <br>
+            <div id="lr">
+                <img src="{{sofa[3]}}"></img>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="box">
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{tvdesk[0]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{tvdesk[1]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{tvdesk[2]}}</div>
+            <br>
+            <div id="lr">
+                <img src="{{tvdesk[3]}}"></img>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="box">
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{table[0]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{table[1]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{table[2]}}</div>
+            <br>
+            <div id="lr">
+                <img src="{{table[3]}}"></img>
+                <!-- <iframe src="../static/lr_item.html" width="100%" height="100%" frameborder="0"></iframe> -->
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="box">
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{sidetable[0]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{sidetable[1]}}</div>
+            <div class="center-span" style="font-size: 20px; margin-bottom: 40px;">{{sidetable[2]}}</div>
+            <br>
+            <div id="lr">
+                <img src="{{sidetable[3]}}"></img>
+                <!-- <iframe src="../static/lr_item.html" width="100%" height="100%" frameborder="0"></iframe> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

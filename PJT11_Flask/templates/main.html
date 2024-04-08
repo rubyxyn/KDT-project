@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'HOUSE</title>
+    <style>
+        @font-face {
+            font-family: 'ImcreSoojin';
+            src: url('../static/font/ImcreSoojin.ttf') format('truetype');
+        }
+        body {
+            background-color: ivory;
+            background-image: url('../static/img/back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: center top;
+            font-family: 'YourFontName', sans-serif;
+        }
+        .audio-controls {
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .main_pic {
+            position: relative;
+            left: 327px;
+            top: 383px;
+            display: flex;  /* 컨테이너 안의 자식 요소를 유연하게 정렬 */
+            align-items: center;
+        }
+        .lr {
+            width: 330px;
+            height: 345px;
+            border-radius: 60%;
+        }
+        .br {
+            width: 330px;
+            height: 345px;
+            border-radius: 60%;
+        }
+        .kit {
+            width: 330px;
+            height: 345px;
+            border-radius: 60%;
+        } 
+
+    </style>
+</head>
+
+<body>
+    
+    <audio id="techie-audio" preload="auto">
+        <source src="../static/music/bg_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- <div class="audio-controls">
+        <button onclick="playAudio()"><img src="../static/img/play.png" alt="재생" width="300px"></button>
+    </div> -->
+
+    <div class="main_pic">
+    <a href="lr.html" target="_blank"><img class="lr" src="../static/img/livingroom.jpg"></a>
+    <a href="br.html" target="_blank"><img class="br" src="../static/img/bedroom.jpg"></a>
+    <a href="kit.html" target="_blank"><img class="kit" src="../static/img/kitchen.jpg"></a>
+    </div>
+
+    <script>
+        var audio = document.getElementById("techie-audio");
+        function playAudio() {
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
+ 
+
+
+
+
