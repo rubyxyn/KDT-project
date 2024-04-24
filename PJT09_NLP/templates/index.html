@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Display</title>
+</head>
+
+<body>
+
+<div style="width:100%;">
+  <form method="POST" action="/">
+    <input type="text" name="url" placeholder="Enter URL here...">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+{% if img1 %}
+<img src="{{ img1 }}" alt="Image 1">
+{% endif %}
+{% if img2 %}
+<img src="{{ img2 }}" alt="Image 2">
+{% endif %}
+{% if img3 %}
+<img src="{{ img3 }}" alt="Image 3">
+{% endif %}
+{% if img4 %}
+<img src="{{ img4 }}" alt="Image 4">
+{% endif %}
+
+</body>
+</html>
